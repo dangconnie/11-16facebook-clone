@@ -11,6 +11,7 @@ img{
 	/* overflow: hidden will cause children to stretch their height up*/
 	overflow: hidden;
 	width: 100%;
+	position: relative;
 }
 
 #header-inner{
@@ -59,6 +60,7 @@ img{
 	width: 24px;
 	background-image: url('fb_sprite.png');
 	background-size: 26px 905px;
+	margin-left: 5px;
 }
 
 /* This is specific to the friends div */
@@ -72,7 +74,81 @@ img{
 }
 
 /* specific to the notifications div */
-.notications{
+.notifications{
 	background-position: 0 -238px;
 }
 
+.lock{
+	background-position: 0 -859px;
+	height:  16px;
+	/* this will override the social icon margin */
+	margin-left:  10px;
+/* 	padding-left:  10px;
+	border-left:  1px solid #444; */
+}
+
+.down-arrow{
+	background-position: 0 -820px;
+	height: 16px;
+
+}
+
+.spacer{
+	line-height: 24px;
+	margin: 0 10px;
+}
+
+#cover-photo-wrapper{
+	max-width: 900px;
+	margin: auto;
+	width: 100%;
+}
+
+#big-photo{
+	max-height: 350px;
+	overflow: hidden;
+}
+
+#big-photo img{
+	width: 100%;
+}
+
+#big-avatar{
+	position: absolute;
+	float: left;
+	height: 160px;
+	width: 160px;
+	margin-top: -130px;
+	margin-left: 50px;
+	z-index: 2;
+	border: 5px solid #ffffff;
+}
+
+#avatar-name{
+	float: left;
+	padding-left: 15px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#cover-button{
+	float: right;
+}
+
+#cover-menu{
+	float: left;
+	margin-left: 120px;
+	padding: 5px;
+}
+
+.cover-menu-item{
+	float: left;
+	list-style-type: none;
+	padding: 15px;
+	border: 1px solid #cccccc;
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #365899;
+
+}	
