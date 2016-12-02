@@ -12,6 +12,7 @@ img{
 	overflow: hidden;
 	width: 100%;
 	position: relative;
+	padding: 5px;
 }
 
 #header-inner{
@@ -21,10 +22,12 @@ img{
 
 #right-header{
 	float: right;
+	margin-right: -61px;
 }
 
 #right-header div{
 	float: left;
+	font-weight: normal;
 }
 
 #left-header{
@@ -45,13 +48,24 @@ img{
 }
 
 #fb-search input{
-	border-radius: 5px;
-	width: 200px;
+	width: 400px;
+	line-height: 17px;
+	margin-left: -3px;
 }
 
 #small-avatar{
 	height: 24px;
 	width: 24px;
+
+}
+
+#home-link a{
+	font-weight: normal;
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+	margin-left: 10px;
+	vertical-align: bottom;
 }
 
 /* This is a catch all for the three social icon divs */
@@ -60,7 +74,7 @@ img{
 	width: 24px;
 	background-image: url('fb_sprite.png');
 	background-size: 26px 905px;
-	margin-left: 5px;
+	margin-left: 11px;
 }
 
 /* This is specific to the friends div */
@@ -83,8 +97,8 @@ img{
 	height:  16px;
 	/* this will override the social icon margin */
 	margin-left:  10px;
-/* 	padding-left:  10px;
-	border-left:  1px solid #444; */
+	margin-top:  5px;
+	/*border-left:  1px solid #444; */
 }
 
 .down-arrow{
@@ -95,13 +109,19 @@ img{
 
 .spacer{
 	line-height: 24px;
-	margin: 0 10px;
+	margin: 0px 10px 0px 15px;
+	font-weight: normal;
 }
 
 #cover-photo-wrapper{
 	max-width: 900px;
 	margin: auto;
 	width: 100%;
+}
+
+#cover-photo-lower{
+	max-width: 900px;
+	margin: auto;
 }
 
 #big-photo{
@@ -114,36 +134,54 @@ img{
 }
 
 #big-avatar{
-	position: absolute;
+	position: relative;
 	float: left;
 	height: 160px;
 	width: 160px;
 	margin-top: -130px;
-	margin-left: 50px;
+	margin-left: 25px;
 	z-index: 2;
 	border: 5px solid #ffffff;
 }
 
 #avatar-name{
 	float: left;
-	padding-left: 15px;
+	padding-left: 50px;
 	font-family: Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 30px;
+	margin: -35px;
+	position: relative;
+
 }
 
 #cover-button{
 	float: right;
+	position: relative;
+	margin: -40px;
+	padding-right: 50px;
 }
+
+#cover-button button{
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 5px;
+	padding: 7px;
+}
+
 
 #cover-menu{
 	float: left;
-	margin-left: 120px;
+	margin-left: 20px;
+	margin-top: -6px;
 	padding: 5px;
 }
 
 .cover-menu-item{
 	float: left;
 	list-style-type: none;
-	padding: 15px;
+	padding: 15px 30px;
 	border: 1px solid #cccccc;
 	text-align: center;
 	font-family: Helvetica, Arial, sans-serif;
